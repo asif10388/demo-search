@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar";
+import SearchModifier from "./components/search-modifier";
+import LPF from "./components/left-panel-filter";
+import SearchListWrapper from "./components/search-list";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="md:sticky md:top-0 md:z-50">
+        <Navbar />
+        <SearchModifier />
+      </div>
+      <div className="container flex flex-col md:flex-row justify-center mx-auto">
+        <LPF />
+        <SearchListWrapper />
+      </div>
     </div>
   );
 }
