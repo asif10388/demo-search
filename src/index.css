@@ -1,14 +1,11 @@
 @font-face {
   font-family: "SF Pro Display";
-  src: local("SF Pro Display"), url("./fonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+  src: local("SF PRO DISPLAY"), url(./fonts/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: SF PRO DISPLAY;
 }

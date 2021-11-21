@@ -3,8 +3,6 @@ import SearchModifier from "./components/search-modifier";
 import LPF from "./components/left-panel-filter";
 import SearchListWrapper from "./components/search-list";
 
-import "./App.css";
-
 function App() {
   return (
     <div className="App">
